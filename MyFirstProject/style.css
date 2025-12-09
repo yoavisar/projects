@@ -1,0 +1,87 @@
+.calculator-container {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #333;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="number"]:focus,
+select:focus {
+    outline: none;
+    border-color: #be3333;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #be3333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #a02b2b;
+}
+
+.result-box {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    min-height: 40px;
+    display: none;
+}
+
+.result-box.show {
+    display: block;
+    border: 2px solid #be3333;
+}
+p {
+    font-size: 40px;
+    color: #0c2e78ff;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Targil2 Styles */
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #ffa500; /* fallback */
+    background-image: radial-gradient(circle at top, #be3333 0%, #ffa500 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}

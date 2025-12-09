@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>matala1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script>
+        const side1 = window.prompt("enter length of first side/תכניס אורך של צלע ראשונה")
+        const side2 = window.prompt("enter length of second side/תכניס אורך של צלע שנייה")
+        const side3 = window.prompt("enter length of third side/תכניס אורך של צלע שלישית")
+        if (Number(side1) + Number(side2) > Number(side3) &&
+            Number(side1) + Number(side3) > Number(side2) &&
+            Number(side2) + Number(side3) > Number(side1))
+        {
+            document.write("a triangle can be formed/ניתן ליצור משולש")
+        }
+        else 
+        {
+            document.write("a triangle cannot be formed/לא ניתן ליצור משולש")
+        }
+    </script>
+</body>
+</html>

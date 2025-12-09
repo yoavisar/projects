@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Project 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <p id="p" style="font: size 40px;"></p>
+    <script>
+        var name = window.prompt("Enter your name/תכניס את שמך");
+        var age = window.prompt("Enter your age/תכניס את גילך");
+        var gender = window.prompt("male or female/זכר או נקבה");
+        if (gender == "female" && age < 14) {
+        document.fgColor = "red";
+        document.bgColor = "pink";
+        document.getElementById("p").innerHTML = name
+        }
+        else if (gender=="female" && age >=14) {
+        document.fgColor = "pink";
+        document.bgColor = "cyan";
+        document.getElementById("p").innerHTML = name
+        }
+        else if (gender=="male" && age < 14) {
+        document.fgColor = "blue";
+        document.bgColor = "green";
+        document.getElementById("p").innerHTML = name
+        }
+        else {
+            color = window.prompt("choose a color/בחר צבע");
+            switch (color) {
+                case "red":
+                    document.bgColor = "red";
+                    break;
+                case "blue":
+                    document.bgcolor = "blue";
+                    break;
+                case "green":
+                    document.bgColor = "green";
+                    break;
+                case "yellow":
+                    document.bgColor = "yellow";
+                    break;
+                case "purple":
+                    document.bgColor = "purple";
+                    break;
+                case "orange":
+                    document.bgColor = "orange";
+                    break;
+                case "pink":
+                    document.bgColor = "pink";
+                    break;
+                case "cyan":
+                    document.bgColor = "cyan";
+                    break;
+                default:
+                    document.bgColor = "black";
+            }
+        }
+    </script>
+</body>
+</html>

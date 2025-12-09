@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Targil1</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-color: #ffa500; /* fallback */
+            background-image: radial-gradient(circle at top, #be3333 0%, #ffa500 100%);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        p {
+            font-size: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body dir="rtl">
+    <p id="p">
+    <script>
+        const num1 = window.prompt("הכנס מספר ראשוןן")
+        const num2 = window.prompt("הכנס מספר שני")
+        const action = window.prompt("הכנס פעולה חשבונית + - * /")
+        switch(action) {
+        case "+":
+            result = Number(num1) + Number(num2)
+            break;
+        case "-":
+            result = Number(num1) - Number(num2)
+            break;
+        case "*":
+            result = Number(num1) * Number(num2)
+            break;
+        case "/":
+            result = Number(num1) / Number(num2)
+            break;
+        default:
+            result = "פעולה לא חוקית"
+        }
+        document.write(result);
+    </script>
+</body>
+</html>

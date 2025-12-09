@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Targil2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body dir="rtl">
+    <p id="p"></p>
+    <script>
+        // קבלת ציונים מהמשתמש
+        const grade1 = window.prompt("הכנס ציון ראשון");
+        const grade2 = window.prompt("הכנס ציון שני");
+
+        // המרת הקלט למספרים ובדיקה
+        const g1 = Number(grade1);
+        const g2 = Number(grade2);
+        const resultEl = document.getElementById('p');
+
+        if (isNaN(g1) || isNaN(g2)) {
+            resultEl.textContent = 'אנא הכנס מספרים תקינים';
+        } else {
+            let result = '';
+
+            // שימוש ב-switch עם ערך boolean (switch(true)) כדי לבדוק תנאים
+            switch (true) {
+                case (g1 >= 60 && g2 >= 60):
+                    result = 'עברת שתי מבחנים';
+                    break;
+                case (g1 >= 60 || g2 >= 60):
+                    result = 'עברת מבחן אחד';
+                    break;
+                default:
+                    result = 'נכשלת בשני המבחנים';
+            }
+
+            resultEl.textContent = result;
+        }
+    </script>
+</body>
+</html>
