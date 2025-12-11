@@ -39,3 +39,10 @@ image {
     width: fit-content;
     height: fit-content;
 }
+table {
+    width: 80%;
+    margin: 20px auto;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-color: black;
+}
