@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>targil 6</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body dir="rtl">
+    <p id="p"></p>
+    <script>
+        angle1 = window.prompt("הכנס זווית ראשונה")
+        angle2 = window.prompt("הכנס זווית שנייה")
+        angle3 = window.prompt("הכנס זווית שלישית")
+        if (angle1==90 || angle2==90 || angle3==90)
+        {
+            document.getElementById("p").textContent = "יכול להיות במשולש ישר זווית "
+        }
+        else 
+        {
+            document.getElementById("p").textContent = "לא יכול להיות במשולש ישר זווית"
+        }
+    </script>
+</body>
+</html>
