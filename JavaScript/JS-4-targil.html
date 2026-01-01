@@ -27,16 +27,20 @@
         document.write("<tr>");
         for (var i =1; i <=100; i++) 
         {
-            if (trcounter % 10 === 0) 
-            {
-                document.write("<td>" + i + "</td>");
-                document.write("</tr>");
-                document.write("<tr>");
-            } 
-            else 
-            {
-                document.write("<td>" + i + "</td>");
+            if (i % 10 == 0) {
+                document.write('<td style="background-color: yellow">' + i + '</td>');
+            } else {
+                document.write('<td>' + i + '</td>');
             }
+            if (trcounter % 10 == 0) 
+            {
+                document.write("</tr>");
+                if (i != 100) 
+                {
+                    document.write("<tr>");
+                }
+            }
+            trcounter++;
         }
     </script>
 </body>
