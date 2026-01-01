@@ -27,7 +27,16 @@
         document.write("<tr>");
         for (var i =1; i <=100; i++) 
         {
-            
+            if (trcounter % 10 === 0) 
+            {
+                document.write("<td>" + i + "</td>");
+                document.write("</tr>");
+                document.write("<tr>");
+            } 
+            else 
+            {
+                document.write("<td>" + i + "</td>");
+            }
         }
     </script>
 </body>
