@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Targil 2</title>
+</head>
+<body>
+    <script>
+        var count = 0;
+        for (var i = 1; i <= 10; i++) 
+        {
+            var num = parseInt(window.prompt("enter a number/תכניס מספר"), 10);
+            if (!isNaN(num) && num % 2 === 0)
+            {
+                count += 1; 
+            }
+        }
+        document.write("You entered " + count + " even numbers / הכנסת " + count + " מספרים זוגיים");
+    </script>
+</body>
+</html>
