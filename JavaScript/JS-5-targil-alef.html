@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js-5-targil-alef</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        var count = 0;
+        var total = 0;
+        for (var i = 1; i <= 7; i++) {
+            var income = parseInt(window.prompt("Enter income number " + i + ":"), 10);
+                if (income >= 3000) {
+                    count += 1;
+                }
+            total += income;
+        }
+        document.write("There are " + count + " workers with income equal to 3000 or above.");
+        document.write("<br>");
+        document.write("The sum of all valid incomes is: " + total);
+    </script>
+</body>
+</html>
