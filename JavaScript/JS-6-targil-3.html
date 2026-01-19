@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>targil 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        var mona =1;
+        var hezka = 1; 
+        number = window.prompt("enter a number");
+        while (mona <=100) {
+            mona = Math.pow(number, hezka);
+            hezka++;
+        }
+        document.write("The largest power of " + number + " less than or equal to 100 is: " + (hezka - 2));
+    </script>
+</body>
+</html>
