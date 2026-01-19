@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>targil 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        var bingy = 42;
+        var guess = 0;
+        while(guess != bingy) {
+            guess = parseInt(window.prompt("Guess a number between 1 to 100:"), 10);
+            if (guess < bingy) {
+                document.write("Too low! Try again.<br>");
+            } else if (guess > bingy) {
+                document.write("Too high! Try again.<br>");
+            } else {
+                document.write("Congratulations! You guessed the correct number: " + bingy);
+            }
+        }
+    </script>
+</body>
+</html>
