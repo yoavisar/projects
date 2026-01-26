@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מונה צובר תרגיל 8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        var total = 0;
+        var count = 0;
+        for (var i =1; i <=7; i++)
+        {
+            var salary = parseFloat(window.prompt("Enter salary " + i + ":"));
+            total += salary;
+            if (salary > 3000)
+            {
+                count++;
+            }
+        }
+        document.write("The total salary of all employees: " + total + "<br>");
+        document.write("The number of employees with salary over 3000: " + count + "<br>");
+    </script>
+</body>
+</html>
