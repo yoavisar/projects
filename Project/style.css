@@ -15,6 +15,28 @@ h1 {
   margin: 0.5em 0;
 }
 
+/* Header container for title and contact image */
+.site-header {
+  display: flex;
+  align-items: flex-start; /* align top edges */
+  justify-content: space-between;
+  padding: 0.5em 1em;
+  direction: rtl;
+}
+
+/* Ensure h1 in header has no extra margins so top aligns with image */
+.site-header h1 {
+  margin: 0;
+}
+
+/* Contact image sizing and alignment */
+.site-header .contact-link img {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  display: block;
+}
+
 /* All H2 match H1 styling but are 30px */
 h2 {
   font-size: 30px;
