@@ -10,7 +10,7 @@ html, body {
 
 /* All H1 are 40px and centered */
 h1 {
-  font-size: 40px;
+  font-size: 60px;
   text-align: center;
   margin: 0.5em 0;
 }
@@ -37,11 +37,67 @@ h1 {
   display: block;
 }
 
+/* Fix contact image to bottom-left corner */
+.site-header .contact-link {
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+  z-index: 1000;
+}
+
+/* Reduce contact size on small screens */
+@media (max-width: 480px) {
+  .site-header .contact-link img {
+    width: 64px;
+    height: 64px;
+  }
+}
+
 /* All H2 match H1 styling but are 30px */
 h2 {
-  font-size: 30px;
+  font-size: 50px;
   text-align: right;
   margin: 0.5em 0;
+  clear: both;
+}
+
+/* Animal images displayed in a horizontal gallery above the text */
+.animal-gallery {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0.5em 0 0.75em 0;
+}
+
+.animal-gallery img {
+  max-width: 300px;
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* Ensure paragraphs and headings start below images */
+h3, p {
+  clear: both;
+  font-size: 40px;
+}
+
+/* Responsive: make images shrink and wrap on smaller screens */
+@media (max-width: 920px) {
+  .animal-gallery img {
+    width: calc(50% - 1rem);
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .animal-gallery img {
+    width: 90%;
+    max-width: 90%;
+    margin: 0.25rem auto;
+  }
 }
 
 /* All H3 match H2 styling but are 10px smaller */
