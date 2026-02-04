@@ -1,0 +1,54 @@
+/* Project stylesheet */
+html, body {
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  /* Blue gradient background */
+  background: linear-gradient(135deg, #1e90ff 0%, #87cefa 50%, #e0f7ff 100%);
+}
+
+/* All H1 are 40px and centered */
+h1 {
+  font-size: 40px;
+  text-align: center;
+  margin: 0.5em 0;
+}
+
+/* All H2 match H1 styling but are 30px */
+h2 {
+  font-size: 30px;
+  text-align: right;
+  margin: 0.5em 0;
+}
+
+/* All H3 match H2 styling but are 10px smaller */
+h3 {
+  font-size: 20px;
+  text-align: right;
+  margin: 0.5em 0;
+}
+
+/* All paragraphs are right-aligned and black */
+p {
+  text-align: right;
+  color: #000000;
+  margin: 0.5em 0;
+}
+/* All images are 300x200 */
+img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* All links are red */
+a {
+  color: red;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b30000;
+  text-decoration: underline;
+}
