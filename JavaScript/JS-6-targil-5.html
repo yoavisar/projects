@@ -8,16 +8,16 @@
 </head>
 <body>
     <script>
-        var bingy = 42;
+        var bingy = 57;
         var guess = 0;
         var attempts = 0;
         while(guess != bingy && attempts < 3) {
             guess = parseInt(window.prompt("Guess a number between 1 to 100:"), 10);
             attempts++;
             if (guess < bingy) {
-                document.write("Too low! Try again.<br>");
+                window.alert("Too low! Try again.");
             } else if (guess > bingy) {
-                document.write("Too high! Try again.<br>");
+                window.alert("Too high! Try again.");
             } else {
                 document.write("Congratulations! You guessed the correct number: " + bingy);
             }

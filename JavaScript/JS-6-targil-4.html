@@ -5,19 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>targil 4</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        h1 {
+            color: red;
+            text-align: center;
+            font-size: 300px;
+            margin-top: 50%;
+        }
+    </style>
 </head>
 <body>
+    <p id ="p"></p>
+    <h1 id="h1"></h1>
     <script>
-        var bingy = 42;
+        var bingy = Math.floor(Math.random() * 100) + 1;
         var guess = 0;
+        var counter = 0;
         while(guess != bingy) {
+            counter++;
             guess = parseInt(window.prompt("Guess a number between 1 to 100:"), 10);
             if (guess < bingy) {
-                document.write("Too low! Try again.<br>");
+                window.alert("Too low! Try again.");
             } else if (guess > bingy) {
-                document.write("Too high! Try again.<br>");
+                window.alert("Too high! Try again.");
             } else {
-                document.write("Congratulations! You guessed the correct number: " + bingy);
+                document.getElementById("h1").innerHTML = "Congratulations! You guessed the correct number: " + bingy + "<br> It took you " + counter + " attempts.";
             }
         }
     </script>
